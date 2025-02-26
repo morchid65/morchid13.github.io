@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code César</title>
+<style>
+    @import url('code_cesar.css');
+    @import url("https://cdn.jsdelivr.net/npm/intro.js@6.0.0/introjs.css");
+    #formulaire {
+    width: 400px;
+    }
+    label {
+    display: inline-block;
+    min-width: 100px;
+    background-color: rgb(49, 19, 97);
+    margin: 5px 0px 0px 0px;
+    padding: 3px;
+    border-radius: 20px 0px 0px 20px;
+    }
+    input {
+    border-radius: 0px 20px 20px 0px;
+    margin: 5px 0px 0px 0px;
+    padding: 3px;
+    }
+    #btnCoder {
+    width: 100%;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <div>
+            <label for="phrase">Saisie</label>
+            <input type="text" id="phrase" size="30" maxlength="40" placeholder="Tapez ici une phrase à
+            coder...">
+        </div>
+        <div>
+            <label for="cle">Clé</label>
+            <input type="number" size="2" min="-9" max="9" value="2" id="cle">
+        </div>
+
+        <div>
+            <input type="button" id="btnCoder" value="Coder" data-intro="Lance le codage">
+            <input type="button" id="btnAider" value="Aider" data-intro="Affiche ce tutoriel">
+        </div>
+
+        <div>
+            <label for="txtCode">Résultat</label>
+            <input type="text" id="txtCode" size="30" disabled>
+        </div>
+        <div data-intro="Saisir ici une phrase sans accents ni symboles de ponctuation">
+            <label...>
+            <input...>
+            <div data-intro="La clé symétrique : positive, elle permet de coder la phrase. Négative, elle permet de
+            le décoder.">
+            <div data-intro="Le résultat s'affichera ici, en lettres capitales"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@6.0.0/intro.min.js"></script>
+    <script src='code_cesar.js'></script>
+</body>
+</html>  
